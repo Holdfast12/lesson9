@@ -8,25 +8,25 @@
 def inputwrite(c, h, o):
     """Функция, принимающая значения C H O и записывающая их в файл Input.txt
     """
-    with open('Input.txt', 'w') as file:
+    with open('exercise1/Input.txt', 'w') as file:
         file.write(f'{c} {h} {o}')
 
 def inputread():
     """Функция, считывающая значения C H O из файла Input.txt и возвращающая их в виде списка
     """
-    with open('Input.txt', 'r') as file:
+    with open('exercise1/Input.txt', 'r') as file:
         return(list(int(i) for i in file.read().split()))
 
 def outputwrite(maxmol):
     """Функция, записывающая максимально возможное число молекул спирта в файл Output.txt
     """
-    with open('Output.txt', 'w') as file:
+    with open('exercise1/Output.txt', 'w') as file:
         file.write(str(maxmol))
 
 def outputread():
     """Функция, считывающая максимально возможное число молекул спирта из файла Output.txt
     """
-    with open('Output.txt', 'r') as file:
+    with open('exercise1/Output.txt', 'r') as file:
         return int(file.read())
 
 #список с кличеством C H O для одной молекулы

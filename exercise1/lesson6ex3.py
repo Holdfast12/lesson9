@@ -24,13 +24,13 @@ def xorfunc(input_text, t_key):
 #чтение файла с исходным текстом 'xor_original.txt' и запись файла с зашифрованным текстом 'xor_encrypted.txt'
 if __name__ == '__main__':
     try:
-        with open('xor_original.txt', 'r') as file:
-            with open('xor_encrypted.txt', 'w') as file2:
+        with open('exercise1/xor_original.txt', 'r') as file:
+            with open('exercise1/xor_encrypted.txt', 'w') as file2:
                 file2.write(xorfunc(file.read(), key))
     except FileNotFoundError:
         print('файл xor_original.txt с исходным текстом не найден')
     else:
     #чтение файла с зашифрованным текстом 'xor_encrypted.txt' и запись файла с расшифрованным текстом 'xor_transcribed.txt'
-        with open('xor_encrypted.txt', 'r') as file:
-            with open('xor_transcribed.txt', 'w') as file2:
+        with open('exercise1/xor_encrypted.txt', 'r') as file:
+            with open('exercise1/xor_transcribed.txt', 'w') as file2:
                 file2.write(xorfunc(file.read(), key))
